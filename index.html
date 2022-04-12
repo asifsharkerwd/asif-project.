@@ -1,0 +1,503 @@
+
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <title>Hello, world!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!--================ top bar============= -->
+        <section class="top-bare">
+            <div class="container">
+                <div class="top-bare-item d-flex align-items-center  ">
+                    <div class="left-top-bar-icon-item">
+                        <ul class="list-unstyled d-flex align-items-center m-0 ">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="right-top-bar-item">
+                        <span><i class="fa-solid fa-phone"></i>011 987 65 43</span>
+                        <span><i class="fa-solid fa-envelope"></i>hello@dream-theme.com</span>
+                        <span><i class="fa-solid fa-clock"></i>Monday – Friday 10 AM – 8 PM</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="m-0">
+        </section>
+        <nav class="navbar navbar-expand-lg  navbar-light nab-area  ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 nav-items">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            About us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Partners</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Construction Management</a></li>
+                                <li><a class="dropdown-item" href="#">Residential Construction (clickable)</a></li>
+                                <li><a class="dropdown-item" href="#">Facility Maintenance</a></li>
+                                <li><a class="dropdown-item" href="#">Mining Infrastructure</a></li>
+                                <li><a class="dropdown-item" href="#">Renovation</a></li>
+                                <li><a class="dropdown-item" href="#">Pavement Preservation</a></li>
+                                <li><a class="dropdown-item" href="#">Site Location</a></li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#">Showcase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">    Contact</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">   <i class="fa-solid fa-magnifying-glass"></i> </a>
+                             	</li> -->
+                        <!-- =============== -->
+                        <!-- LOGIN MODAL TRIGGER -->
+                        <button class="btn searchbtn " data-toggle="modal" data-target="#loginModal"> <i class="fa-solid fa-magnifying-glass text-dark"></i></button>
+                        <!-- LOGIN MODAL -->
+                        <div class="modal" id="loginModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Login</h5>
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="username">Username</label>
+                                                <input type="text" placeholder="Username" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" placeholder="Password" class="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- =============== -->
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                         </form> -->
+                </div>
+            </div>
+        </nav>
+        <!-- ========== hero section========= -->
+        <section class="hero-section">
+            <div class="fix-box">
+                <div class="fix-icon">
+                    <a href="https://www.facebook.com/asifsharker.2"  target="_blank"><img src="img/setting.png" alt="" ></a>
+                </div>
+                <div class="fix-dollar">
+                    <a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590?ref=Dream-Theme&license=regular&open_purchase_for_item_id=5556590" target="_blank" >	<img src="img/dollar.png" alt=""></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6  hero-full-area">
+                        <div class="hero-containt">
+                            <h2>People, Technology<br>
+                                &amp; Experience
+                            </h2>
+                            <h6>Curabitur pellentesque - neque eget diam posuere porta. Quisque ut nulla oin porta tellus, ut feugiat nibh. Lorem ipsum nulla amos eget purus vel mauris tincidunt tincidunt nibh tortor.</h6>
+                            <a href="#">about us</a>
+                            <a href="#">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============About Our Company ==========-->
+        <section class="About-our-company-area">
+            <div class="container">
+                <div class="about-title">
+                    <h2>About Our Company</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img class="img-fluid" src="img/about1.jpg" alt="">
+                                <div class="gallery-contant">
+                                </div>
+                            </div>
+                            <h3>About Our Company</h3>
+                            <p>Sed est tellus, vulputate sit amet justo non, varius malesuada dolor. Nullam ullamcorper, metus non rhoncus placerat auctor nibh, non finibus sapien turpis ut mauris.</p>
+                            <a href="#">about us</a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4">
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img class="img-fluid" src="img/about2.jpg" alt="">
+                                <div class="gallery-contant">
+                                </div>
+                            </div>
+                            <h3>Our Services</h3>
+                            <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut.</p>
+                            <a href="#">view services</a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4">
+                        <div class="about-item">
+                            <div class="about-img">
+                                <img class="img-fluid" src="img/about3.jpg" alt="">
+                                <div class="gallery-contant">
+                                </div>
+                            </div>
+                            <h3>Our Partners</h3>
+                            <p>Mattis ipsum dolor sit amet, vesena tomosi elit. Ut elit tellus, luctus nec kesa , pulvinar dapibus edwora sed semper sit amet, sollicitudin vitae nibh moresa at magna eu augue semper.</p>
+                            <a href="#">view partners</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= What We Do ========== -->
+        <section class="whar-we-area">
+            <div class="container">
+                <div class="what-title">
+                    <h2>What We Do</h2>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-1.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Construction Management</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-2.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Facility Maintenance</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-3.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Mining Infrastructure</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-2.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Pavement Preservation</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-3.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Residential Construction</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="what-we-do-item text-center">
+                            <div class="what-we-do-item-img m-auto">
+                                <img src="img/sl-1.jpg" alt="">
+                                <div class="do-img">
+                                </div>
+                            </div>
+                            <h3>Site Location</h3>
+                            <p>Eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit lacus dapibus ut glavrida.</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========large-project-area======== -->
+        <section class="join-team large-project-area">
+            <div class="project-obarlay">
+                <div class="container">
+                    <div class="tem-content">
+                        <h2>Have a Large Project?</h2>
+                        <p>Mattis ipsum dolor sit amet, vesena tomosi elit. Ut elit tellus, luctus ned semper sit amet, <br> sollicitudin vitae nibh moresa at magna eu augue semper. Contact us today!</p>
+                        <a href="#">send a message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========Core Team======== -->
+        <section class="core-area">
+            <div class="container">
+                <div class="team-title">
+                    <h2>Core Team</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="Core-core-item">
+                            <div class="tem-media">
+                                <img class="img-fluid" src="img/team4.jpg" alt="">
+                            </div>
+                            <div class="team-author">
+                                <h4 class="m-0">Tiffany White</h4>
+                                <p>Roof Work</p>
+                            </div>
+                            <div class="team-content">
+                                <p>Nunc faucibus facilisis pellen tesque facilisis. Sed hendrerit enim non justo posuere placerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="Core-core-item">
+                            <div class="tem-media">
+                                <img class="img-fluid" src="img/team2.jpg" alt="">
+                            </div>
+                            <div class="team-author">
+                                <h4 class="m-0">Tiffany White</h4>
+                                <p>John Doe</p>
+                            </div>
+                            <div class="team-content">
+                                <p>Mattis ipsum dolor sit amet, vesena tomosi elit. Ut elit tellus, luctus nec kesa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="Core-core-item">
+                            <div class="tem-media">
+                                <img class="img-fluid" src="img/team3.jpg" alt="">
+                            </div>
+                            <div class="team-author">
+                                <h4 class="m-0">Diana Wood</h4>
+                                <p>Steel Construction Work</p>
+                            </div>
+                            <div class="team-content">
+                                <p>Praesent lobortis mauris et tellus pretium pulvinar. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="Core-core-item">
+                            <div class="tem-media">
+                                <img class="img-fluid" src="img/team1.jpg" alt="">
+                            </div>
+                            <div class="team-author">
+                                <h4 class="m-0">Maria Donald</h4>
+                                <p>Public Engineer</p>
+                            </div>
+                            <div class="team-content">
+                                <p>Praesent lobortis mauris et tellus pretium pulvinar. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========large-project-area======== -->
+        <section class="join-team large-project-area">
+            <div class="project-obarlay">
+                <div class="container">
+                    <div class="tem-content">
+                        <h2>Join Our Team!</h2>
+                        <p>Integer eget venenatis massa. Mauris sed tellus quam. Suspendisse risus nulla, molestie <br> quis risus elementum, viverra viverra ipsum. Nulla aliquam dolor turpis, auctor suscipit <br> lacus dapibus ut – lorem ipsum dolor amet!</p>
+                        <a href="#">send a message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========  Testimonials  ========= -->
+        <section class="testimonials-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="tistimonial-title">
+                            <h2>Testimonials</h2>
+                        </div>
+                        <div class="textimonials-lft-item">
+                            <div class="test-img">
+                                <img src="img/ts1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>Aenean diam purus finibus lectus – uthendrerit ante sed turpis interdum consequat. Proin eleifend nulla! In molestie nibh at ipsum maximus, tristique congue lacus ultrices. Pellentesque non risus urna. Curabitur hendrerit convallis euismod.</p>
+                                <span>Gregor Blackwod</span> <br>
+                                <h6>investor</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tistimonial-title">
+                            <h2>Our Partners</h2>
+                        </div>
+                        <div class="our-partners-right-area text-center">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/3.png" alt=""></a>
+                                        <h6>Design & Build</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/2.png" alt=""></a>
+                                        <h6>Interior Bureau</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/3.png" alt=""></a>
+                                        <h6>Building Bureau</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/5.png" alt=""></a>
+                                        <h6>Apartments</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/6.png" alt=""></a>
+                                        <h6>Building Company</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="partner-item">
+                                        <a href="#"><img class="img-fluid" src="img/1.png" alt=""></a>
+                                        <h6>Building Bureau</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================footer-area============= -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-logo-containt">
+                            <img class="img-fluid" src="img/footer-logox2.png" alt="">
+                            <p>Mauris rhoncus est eget efficitur consequat. Praesent tempus suscipit ante, eu egestas orci porttitor interdum. Integer luctus, leo porta lacinia convallis, diam purus finibus lectus, ut rutrum quam velit id orci. Aenean hendrerit ante sed turpis interdum consequat. Proin eleifend nulla!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-containt">
+                            <h2>Contact Us</h2>
+                            <div class="about-content">
+                                <h6>Phone:</h6>
+                                <p>(011) 322 44 56, (011) 223 46 78</p>
+                            </div>
+                            <div class="about-content">
+                                <h6>Address:</h6>
+                                <p>121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+                            </div>
+                            <div class="about-content">
+                                <h6>We are open:</h6>
+                                <p>Mon - Sat: 10 AM - 8 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-containt">
+                            <h2>News</h2>
+                            <div class="about-content">
+                                <h6 class="f-news-link" >Sed nec felis ut massa volutpat dictum quis id tortor</h6>
+                                <p>28th June 2016</p>
+                            </div>
+                            <div class="about-content">
+                                <h6 class="f-news-link">Curabitur cursus condimentum ex non aliquam</h6>
+                                <p>28th June 2016</p>
+                            </div>
+                            <div class="about-content">
+                                <h6 class="f-news-link">Cras ultricies molestie elit ac placerat</h6>
+                                <p>28th June 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-bootom">
+            <div class="container">
+                <div class="footer-bottom-containt">
+                    <div class="footer-bottom-item">
+                        <a href="#">  Dream-Theme — truly premium WordPress themes</a>
+                    </div>
+                    <div class="footer-bottom-item">
+                        <a href="#">© Seven Construction 2016. All rights reserved.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bootstrap.min.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>
+
